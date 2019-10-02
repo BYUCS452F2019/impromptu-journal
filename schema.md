@@ -3,18 +3,18 @@
 ### Tables
 #### Users 
 ``` 
-    user_id PRIMARY_KEY    id of user
-    username          name of user
-    firstname         first name of user
-    lastname          last name of user
-    password          password for the user
-    display_prompts   preference to show journal prompts
+    user_id PRIMARY_KEY id of user
+    username            name of user
+    firstname           first name of user
+    lastname            last name of user
+    password            password for the user
+    display_prompts     preference to show journal prompts
 ```
 
 #### Entries 
 ``` 
     id PRIMARY_KEY    id of journal entry
-    entrycontent           content of journal entry
+    entry_content     content of journal entry
     latitude          latitude of location when entry made
     longitude         longitude of location when entry made
     timestamp         time entry was created
@@ -27,8 +27,8 @@
 
 #### Prompts 
 ``` 
-    prompt_id PRIMARY_KEY    id of prompt
-    promptcontent           content of prompt
+    prompt_id PRIMARY_KEY   id of prompt
+    prompt_content          content of prompt
 ```
 
 ### Entities that tables represent
