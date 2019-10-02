@@ -1,11 +1,13 @@
 # Impromptu Journal Schema
 
 ### Overall Schema
+```
 Entry (entry_id, entry_content, latitude, longitude, timestamp, prompt_id, user_id)
 	Foreign Key: prompt_id references Prompt
     Foreign Key: user_id references User
 User (user_id, username, first_name, last_name, password, display_prompts)
 Prompt (prompt_id, prompt_content)
+```
 
 
 ### Tables
