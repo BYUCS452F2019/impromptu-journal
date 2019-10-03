@@ -41,8 +41,6 @@ Prompt (prompt_id, prompt_content)
     prompt_content          content of prompt
 ```
 
-### Entities that tables represent
-
 ### Table Name Explanation/Relationship of Entities/Normalization 
 ``` 
     Table Names Explained:
@@ -51,7 +49,7 @@ Prompt (prompt_id, prompt_content)
     Prompt     The subject of this entry is the prompts that can be used for an entry.
     
     The tables are related in the following way:
-        Entries have foreign keys to both the Propmt table and the User table. In this way, a user can be joined with their associated entry to link those two tables together. The Entry table can then be joined with the prompt table to gather the content of the prompt and link it back to the user. 
+        Entries have foreign keys to both the Prompt table and the User table. In this way, a user can be joined with their associated entry to link those two tables together. The Entry table can then be joined with the prompt table to gather the content of the prompt and link it back to the user. 
         
     Normalization
         The relations above are in 1st and 2nd normal form. The columns are atomic in every relation, and they all rely upon the primary key. They are also in 3rd and 4th normal form because there are no other functional dependencies besides the primary keys to the rest of their attributes and no multi-valued dependencies.
